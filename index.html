@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!--This is the container for the heading-->
+    <div class="container"> 
+        <h1>Book Library</h1>
+        <p>A Place to store all your loved books and the progress.</p>
+        <hr>
+        <!--This is where you add a new book and search-->
+        <div class="app-functionality"> 
+            <input type="text" class="search-book" placeholder="Search Book">
+            <br>
+            <br>
+            <button class="add-book">Add Book</button>
+        </div>
+
+    <div class="book-form">
+            <label for="title">Title:</label>
+            <br>
+            <input type="text" class="title" required>
+             <p class="error-title">Please fill in</p>
+            <br>
+            <label for="author">Author:</label>
+            <br>
+            <input type="text" required class="author">
+            <p class="error-author">Please fill in</p>
+            <br>
+            <label for="genre">Genre:</label>
+            <br>
+            <input type="text" required class="genre">
+            <p class="error-genre">Please fill in</p>
+            <br>
+            <label for="pages">Pages:</label>
+            <br>
+            <input type="number" required class="pages" min="0">
+            <p class="error-pages">Please fill in</p>
+            <br>
+            <button  class="done">DONE</button>
+            <button class="cancel-form">CLOSE</button>
+    </div>    
+    </div>
+    <div class='book-place'></div> 
+ 
+<script src="script.js"></script>
+</body>
+</html>
